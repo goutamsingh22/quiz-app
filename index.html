@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen active">
+            <h1>Quiz Application</h1>
+            <p>Test your knowledge with multiple choice questions</p>
+            <div class="info">
+                <p><strong>Questions:</strong> 5</p>
+                <p><strong>Time per question:</strong> 30 seconds</p>
+                <p><strong>Scoring:</strong> 1 point per correct answer</p>
+            </div>
+            <button id="startBtn" class="btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="screen">
+            <div class="quiz-header">
+                <div class="quiz-info">
+                    <span id="questionNumber">Question 1 of 5</span>
+                    <span id="score">Score: 0</span>
+                </div>
+                <div class="timer-container">
+                    <span class="timer-label">Time:</span>
+                    <span id="timer" class="timer">30</span>
+                </div>
+            </div>
+            <div class="question-container">
+                <h2 id="questionText">Question goes here</h2>
+                <div id="optionsContainer" class="options">
+                    <!-- Options will be dynamically added -->
+                </div>
+            </div>
+            <div class="quiz-footer">
+                <button id="nextBtn" class="btn" disabled>Next Question</button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="resultsScreen" class="screen">
+            <h1>Quiz Complete!</h1>
+            <div class="results-summary">
+                <div class="score-circle">
+                    <span id="finalScore">0</span>/<span id="totalQuestions">5</span>
+                </div>
+                <p id="percentage" class="percentage">0%</p>
+                <p id="resultMessage" class="result-message"></p>
+            </div>
+            <div class="results-details">
+                <h3>Review Answers</h3>
+                <div id="reviewContainer">
+                    <!-- Review items will be dynamically added -->
+                </div>
+            </div>
+            <button id="restartBtn" class="btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
