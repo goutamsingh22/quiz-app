@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Quiz Application
 
 A responsive quiz application built with HTML, CSS, and JavaScript featuring multiple-choice questions, timer, scoring, and detailed results.
@@ -32,3 +33,6 @@ A responsive quiz application built with HTML, CSS, and JavaScript featuring mul
 - HTML5
 - CSS3 (Flexbox, Gradients, Animations)
 - Vanilla JavaScript (ES6+)
+=======
+# quiz-app
+>>>>>>> 6baa701063399a131da7551ac25d040f1d38e2c9
